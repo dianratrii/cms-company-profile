@@ -1,10 +1,10 @@
 
 <div class="sidebar-header hidden lg:flex items-center relative justify-between px-3 lg:px-6 shrink-0" id="sidebar_header">
-    <a class="dark:hidden" href="html/demo1.html">
+    <a class="dark:hidden" href="{{route('admin.dashboard')}}">
         <img class="default-logo min-h-[22px] max-w-none" src="assets/media/app/default-logo.svg"/>
         <img class="small-logo min-h-[22px] max-w-none" src="assets/media/app/mini-logo.svg"/>
     </a>
-    <a class="hidden dark:block" href="html/demo1.html">
+    <a class="hidden dark:block" href="{{route('admin.dashboard')}}">
         <img class="default-logo min-h-[22px] max-w-none" src="assets/media/app/default-logo-dark.svg"/>
         <img class="small-logo min-h-[22px] max-w-none" src="assets/media/app/mini-logo.svg"/>
     </a>
@@ -18,7 +18,7 @@
         <!-- Sidebar Menu -->
         <div class="menu flex flex-col grow gap-0.5" data-menu="true" data-menu-accordion-expand-all="false" id="sidebar_menu">
             <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
-                <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px]" tabindex="0">
+                <a href="{{route('admin.dashboard')}}" class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px]" tabindex="0">
                      <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
                       <i class="ki-filled ki-element-11 text-lg">
                       </i>
@@ -26,7 +26,7 @@
                     <span class="menu-title text-sm font-medium text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
                       Dashboard
                     </span>
-                </div>
+                </a>
             </div>
             <div class="menu-item pt-2.25 pb-px">
                 <span class="menu-heading uppercase text-2sm font-medium text-gray-500 pl-[10px] pr-[10px]">
@@ -34,24 +34,24 @@
                 </span>
             </div>
             <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
-                <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px]" tabindex="0">
+                <a href="{{route('admin.pages.index')}}" class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px]" tabindex="0">
                      <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
                       <i class="ki-filled ki-abstract-26 text-lg"></i>
                      </span>
                     <span class="menu-title text-sm font-medium text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
                       Manage Page
                      </span>
-                </div>
+                </a>
             </div>
             <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
-                <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px]" tabindex="0">
+                <a href="{{route('admin.pages.create')}}" class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] pl-[10px] pr-[10px] py-[6px]" tabindex="0">
                      <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
                       <i class="ki-filled ki-additem text-lg"></i>
                      </span>
                     <span class="menu-title text-sm font-medium text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
                       Create Page
                      </span>
-                </div>
+                </a>
             </div>
             <div class="menu-item pt-2.25 pb-px">
                 <span class="menu-heading uppercase text-2sm font-medium text-gray-500 pl-[10px] pr-[10px]">

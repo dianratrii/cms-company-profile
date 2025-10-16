@@ -11,4 +11,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     })->name('logout');
 
     Route::get('/', \App\Livewire\Admin\Dashboard\Index::class)->name('dashboard');
+
+    Route::group(['prefix' => 'pages', 'as' => 'pages.'], function () {
+        Route::get('/', \App\Livewire\Admin\Page\Index::class)->name('index');
+        Route::get('/create', \App\Livewire\Admin\Page\Create::class)->name('create');
+    });
 });

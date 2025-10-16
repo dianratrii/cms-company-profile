@@ -83,7 +83,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
             <div class="container-fixed flex justify-between items-stretch lg:gap-4" id="header_container">
                 <!-- Mobile Logo -->
                 <div class="flex gap-1 lg:hidden items-center -ml-1">
-                    <a class="shrink-0" href="html/demo1.html">
+                    <a class="shrink-0" href="{{route('admin.dashboard')}}">
                         <img class="max-h-[25px] w-full" src="assets/media/app/mini-logo.svg"/>
                     </a>
                     <div class="flex items-center">
